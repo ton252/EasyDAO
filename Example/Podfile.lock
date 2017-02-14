@@ -1,0 +1,16 @@
+PODS:
+  - EasyDAO (0.1.0)
+
+DEPENDENCIES:
+  - EasyDAO (from `../`)
+
+EXTERNAL SOURCES:
+  EasyDAO:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyDAO: 70e3915da8fc17a7c712fd25eaae2ce9214aee9d
+
+PODFILE CHECKSUM: 59db18be39addf4e312ff31ef7d330eec8f165ce
+
+COCOAPODS: 1.2.0

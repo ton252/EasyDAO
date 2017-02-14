@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221530C8BC500373270A8A0B46A0227F /* EasyDAO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B41F676B8CCEF0359D7887373B76503 /* EasyDAO-dummy.m */; };
+		280BEAB546C7A54ED02972A8DCAF110D /* Pods-EasyDAO_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6A19DAB9E657CF0F48EB515EB2F8AE /* Pods-EasyDAO_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BC46D812B21F9CE44FDE8AD25B67CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4C76C2CCD1DB728122B190171A95B92A /* Pods-EasyDAO_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EBD0375A6FDBF8A312B80262C4133E /* Pods-EasyDAO_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B61CCEB68493081216C8111912CC61 /* Pods-EasyDAO_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF555089A5CF2D6AA0BBB95B38CC4E /* Pods-EasyDAO_Tests-dummy.m */; };
+		98B3F69611F71ED5DEABABF60DABE0D1 /* Pods-EasyDAO_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 667F71FC75F90DE238F5C6C96062CF12 /* Pods-EasyDAO_Example-dummy.m */; };
+		BA654BBD6929D86BD7A1DE12321F07D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CEB043D8A0894CB98B678F85C38000C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FC9EA553B0CA28B5E12902249215ED40 /* EasyDAO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E48671F40DF6E1F9EA15A094CBD1B178 /* EasyDAO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F51AFA839FBA5C28259B0D1BD64E06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A74DBA86849FD7DB9D68EBA9F297D51;
+			remoteInfo = EasyDAO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06221531334068870007CD7A9B8DC223 /* EasyDAO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDAO.xcconfig; sourceTree = "<group>"; };
+		15A1EC08809168A6B043BFF4991B1F08 /* Pods-EasyDAO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyDAO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		18F2E4E5379704C9DDA403E5722D2812 /* EasyDAO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyDAO.modulemap; sourceTree = "<group>"; };
+		1FF9529EF693022687B1089B6DF028AE /* Pods-EasyDAO_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyDAO_Tests-resources.sh"; sourceTree = "<group>"; };
+		2D6F14432B24BB083E27684884AB2988 /* EasyDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E65B4227E32C8964CC8AD73507A1FDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3488ABCA9685E24112656E24D6AF61B1 /* Pods-EasyDAO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyDAO_Example.release.xcconfig"; sourceTree = "<group>"; };
+		34BF14919AFE0EA5802246583860680D /* EasyDAO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDAO-prefix.pch"; sourceTree = "<group>"; };
+		39EBD0375A6FDBF8A312B80262C4133E /* Pods-EasyDAO_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyDAO_Example-umbrella.h"; sourceTree = "<group>"; };
+		3B41F676B8CCEF0359D7887373B76503 /* EasyDAO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyDAO-dummy.m"; sourceTree = "<group>"; };
+		413942926AA3D1690D996DCFEDC0D3A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667F71FC75F90DE238F5C6C96062CF12 /* Pods-EasyDAO_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyDAO_Example-dummy.m"; sourceTree = "<group>"; };
+		68232C0D97B43DC69B5CEF0F29195D39 /* Pods_EasyDAO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyDAO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABF555089A5CF2D6AA0BBB95B38CC4E /* Pods-EasyDAO_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyDAO_Tests-dummy.m"; sourceTree = "<group>"; };
+		7183697F1E538FF400D17A6F /* DAOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOProtocol.swift; sourceTree = "<group>"; };
+		718369801E538FF400D17A6F /* EntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityProtocol.swift; sourceTree = "<group>"; };
+		718369811E538FF400D17A6F /* TranslatorProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorProtcol.swift; sourceTree = "<group>"; };
+		718369831E538FF400D17A6F /* CoreDataDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDAO.swift; sourceTree = "<group>"; };
+		718369841E538FF400D17A6F /* CoreDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTranslator.swift; sourceTree = "<group>"; };
+		718369861E538FF400D17A6F /* RealmDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDAO.swift; sourceTree = "<group>"; };
+		718369871E538FF400D17A6F /* RealmTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTranslator.swift; sourceTree = "<group>"; };
+		71FFB2E36BAE218784225D11CBDD77AF /* Pods-EasyDAO_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyDAO_Example-resources.sh"; sourceTree = "<group>"; };
+		764333FD4C6C6D6CE4BDFCBDE20A6A8B /* Pods-EasyDAO_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyDAO_Tests.modulemap"; sourceTree = "<group>"; };
+		78D099F7F71D280DDEA0EA853C4C85B5 /* Pods-EasyDAO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyDAO_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7D6B6269E43BCBEC89B4B5DB8AE9DA73 /* Pods-EasyDAO_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyDAO_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		952F597BF617F6D31D55754EBC8F0FE7 /* Pods-EasyDAO_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyDAO_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2B625518233FBDD1109A322744A8A45 /* Pods-EasyDAO_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyDAO_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB4E83293218FC60DBD3015FC9CB4BBA /* Pods-EasyDAO_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyDAO_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB89E918E0671978D37855473437B382 /* Pods_EasyDAO_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyDAO_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6A19DAB9E657CF0F48EB515EB2F8AE /* Pods-EasyDAO_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyDAO_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BFFF6673D621522F8403F04968A8C56D /* Pods-EasyDAO_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyDAO_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3D677F516C88E46803252F82CA3F22B /* Pods-EasyDAO_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyDAO_Example.modulemap"; sourceTree = "<group>"; };
+		DA5E214D00302BECE394BF37115D3B39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48671F40DF6E1F9EA15A094CBD1B178 /* EasyDAO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDAO-umbrella.h"; sourceTree = "<group>"; };
+		FEFA16B47162EBB1EF7066C944E73E46 /* Pods-EasyDAO_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyDAO_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FFCB34C663D8826C4FB812184AC9AFE5 /* Pods-EasyDAO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyDAO_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D4192EFE02D3500887AFB6D382A5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB043D8A0894CB98B678F85C38000C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC7A0AEADC3C814E410DA84A1B183D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA654BBD6929D86BD7A1DE12321F07D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87336A30B7DAD3627A86475E7B90DC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC46D812B21F9CE44FDE8AD25B67CD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DD3AC0B260DB4E8FC56F6353D79A7CC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				633DE8F99C7ADF04F746E718736087A0 /* EasyDAO */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		18F31B5E672E5CE101339CB1FFA58672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6F14432B24BB083E27684884AB2988 /* EasyDAO.framework */,
+				AB89E918E0671978D37855473437B382 /* Pods_EasyDAO_Example.framework */,
+				68232C0D97B43DC69B5CEF0F29195D39 /* Pods_EasyDAO_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E39613E14BB914A2DDDF4188E10A844 /* Pods-EasyDAO_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2E65B4227E32C8964CC8AD73507A1FDA /* Info.plist */,
+				764333FD4C6C6D6CE4BDFCBDE20A6A8B /* Pods-EasyDAO_Tests.modulemap */,
+				952F597BF617F6D31D55754EBC8F0FE7 /* Pods-EasyDAO_Tests-acknowledgements.markdown */,
+				7D6B6269E43BCBEC89B4B5DB8AE9DA73 /* Pods-EasyDAO_Tests-acknowledgements.plist */,
+				6ABF555089A5CF2D6AA0BBB95B38CC4E /* Pods-EasyDAO_Tests-dummy.m */,
+				BFFF6673D621522F8403F04968A8C56D /* Pods-EasyDAO_Tests-frameworks.sh */,
+				1FF9529EF693022687B1089B6DF028AE /* Pods-EasyDAO_Tests-resources.sh */,
+				AF6A19DAB9E657CF0F48EB515EB2F8AE /* Pods-EasyDAO_Tests-umbrella.h */,
+				15A1EC08809168A6B043BFF4991B1F08 /* Pods-EasyDAO_Tests.debug.xcconfig */,
+				FFCB34C663D8826C4FB812184AC9AFE5 /* Pods-EasyDAO_Tests.release.xcconfig */,
+			);
+			name = "Pods-EasyDAO_Tests";
+			path = "Target Support Files/Pods-EasyDAO_Tests";
+			sourceTree = "<group>";
+		};
+		5B0A14729BBFA02C13C2A2D0EAB9B343 /* EasyDAO */ = {
+			isa = PBXGroup;
+			children = (
+				802623C3C432A16B8DF3B032E79D22B6 /* Classes */,
+			);
+			path = EasyDAO;
+			sourceTree = "<group>";
+		};
+		633DE8F99C7ADF04F746E718736087A0 /* EasyDAO */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A14729BBFA02C13C2A2D0EAB9B343 /* EasyDAO */,
+				B72F8834D29C85FEEECA2ED4BD75C1C6 /* Support Files */,
+			);
+			name = EasyDAO;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7183697E1E538FF400D17A6F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7183697F1E538FF400D17A6F /* DAOProtocol.swift */,
+				718369801E538FF400D17A6F /* EntityProtocol.swift */,
+				718369811E538FF400D17A6F /* TranslatorProtcol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		718369821E538FF400D17A6F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				718369831E538FF400D17A6F /* CoreDataDAO.swift */,
+				718369841E538FF400D17A6F /* CoreDataTranslator.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		718369851E538FF400D17A6F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				718369861E538FF400D17A6F /* RealmDAO.swift */,
+				718369871E538FF400D17A6F /* RealmTranslator.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0DD3AC0B260DB4E8FC56F6353D79A7CC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				18F31B5E672E5CE101339CB1FFA58672 /* Products */,
+				DF80898F0818D72D78B2638C6A3E6118 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		802623C3C432A16B8DF3B032E79D22B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7183697E1E538FF400D17A6F /* Base */,
+				718369821E538FF400D17A6F /* CoreData */,
+				718369851E538FF400D17A6F /* Realm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B72F8834D29C85FEEECA2ED4BD75C1C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18F2E4E5379704C9DDA403E5722D2812 /* EasyDAO.modulemap */,
+				06221531334068870007CD7A9B8DC223 /* EasyDAO.xcconfig */,
+				3B41F676B8CCEF0359D7887373B76503 /* EasyDAO-dummy.m */,
+				34BF14919AFE0EA5802246583860680D /* EasyDAO-prefix.pch */,
+				E48671F40DF6E1F9EA15A094CBD1B178 /* EasyDAO-umbrella.h */,
+				DA5E214D00302BECE394BF37115D3B39 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyDAO";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF80898F0818D72D78B2638C6A3E6118 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C326DF1992970DFC722F381E49D81C /* Pods-EasyDAO_Example */,
+				4E39613E14BB914A2DDDF4188E10A844 /* Pods-EasyDAO_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F4C326DF1992970DFC722F381E49D81C /* Pods-EasyDAO_Example */ = {
+			isa = PBXGroup;
+			children = (
+				413942926AA3D1690D996DCFEDC0D3A4 /* Info.plist */,
+				D3D677F516C88E46803252F82CA3F22B /* Pods-EasyDAO_Example.modulemap */,
+				A2B625518233FBDD1109A322744A8A45 /* Pods-EasyDAO_Example-acknowledgements.markdown */,
+				AB4E83293218FC60DBD3015FC9CB4BBA /* Pods-EasyDAO_Example-acknowledgements.plist */,
+				667F71FC75F90DE238F5C6C96062CF12 /* Pods-EasyDAO_Example-dummy.m */,
+				FEFA16B47162EBB1EF7066C944E73E46 /* Pods-EasyDAO_Example-frameworks.sh */,
+				71FFB2E36BAE218784225D11CBDD77AF /* Pods-EasyDAO_Example-resources.sh */,
+				39EBD0375A6FDBF8A312B80262C4133E /* Pods-EasyDAO_Example-umbrella.h */,
+				78D099F7F71D280DDEA0EA853C4C85B5 /* Pods-EasyDAO_Example.debug.xcconfig */,
+				3488ABCA9685E24112656E24D6AF61B1 /* Pods-EasyDAO_Example.release.xcconfig */,
+			);
+			name = "Pods-EasyDAO_Example";
+			path = "Target Support Files/Pods-EasyDAO_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		487E706EFA2558D8BF5B3028D1AED8B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9EA553B0CA28B5E12902249215ED40 /* EasyDAO-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C3049428F03E16593656650A6BE871 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C76C2CCD1DB728122B190171A95B92A /* Pods-EasyDAO_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A625573832F9B53E11DAAD9E310444F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280BEAB546C7A54ED02972A8DCAF110D /* Pods-EasyDAO_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5966C2B09AD84947F6BC7733F07F3B6F /* Pods-EasyDAO_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8913081BBD9A35BF043FF8CCC6E86CFB /* Build configuration list for PBXNativeTarget "Pods-EasyDAO_Tests" */;
+			buildPhases = (
+				3C1B598809EC899288BD0C8D90764803 /* Sources */,
+				30D4192EFE02D3500887AFB6D382A5D7 /* Frameworks */,
+				A625573832F9B53E11DAAD9E310444F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyDAO_Tests";
+			productName = "Pods-EasyDAO_Tests";
+			productReference = 68232C0D97B43DC69B5CEF0F29195D39 /* Pods_EasyDAO_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A74DBA86849FD7DB9D68EBA9F297D51 /* EasyDAO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8FA3358E2F8839C8AF3AF25180763E2 /* Build configuration list for PBXNativeTarget "EasyDAO" */;
+			buildPhases = (
+				5916E457B006E4A8DE7E95EBB9DA04EE /* Sources */,
+				7FC7A0AEADC3C814E410DA84A1B183D6 /* Frameworks */,
+				487E706EFA2558D8BF5B3028D1AED8B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyDAO;
+			productName = EasyDAO;
+			productReference = 2D6F14432B24BB083E27684884AB2988 /* EasyDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC03B4BAC33494A2739E4F937E1A9C97 /* Pods-EasyDAO_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47EC48F196A4BF780BAFF6638DEF2E2 /* Build configuration list for PBXNativeTarget "Pods-EasyDAO_Example" */;
+			buildPhases = (
+				ABBCB6540236B5D7A600E5BE91C06FE4 /* Sources */,
+				87336A30B7DAD3627A86475E7B90DC51 /* Frameworks */,
+				A2C3049428F03E16593656650A6BE871 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B46F791C1A6ECD1A8E6F16DEC9892EB /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyDAO_Example";
+			productName = "Pods-EasyDAO_Example";
+			productReference = AB89E918E0671978D37855473437B382 /* Pods_EasyDAO_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					9A74DBA86849FD7DB9D68EBA9F297D51 = {
+						LastSwiftMigration = 0820;
+					};
+					AC03B4BAC33494A2739E4F937E1A9C97 = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 18F31B5E672E5CE101339CB1FFA58672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A74DBA86849FD7DB9D68EBA9F297D51 /* EasyDAO */,
+				AC03B4BAC33494A2739E4F937E1A9C97 /* Pods-EasyDAO_Example */,
+				5966C2B09AD84947F6BC7733F07F3B6F /* Pods-EasyDAO_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C1B598809EC899288BD0C8D90764803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B61CCEB68493081216C8111912CC61 /* Pods-EasyDAO_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5916E457B006E4A8DE7E95EBB9DA04EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221530C8BC500373270A8A0B46A0227F /* EasyDAO-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABBCB6540236B5D7A600E5BE91C06FE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B3F69611F71ED5DEABABF60DABE0D1 /* Pods-EasyDAO_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B46F791C1A6ECD1A8E6F16DEC9892EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyDAO;
+			target = 9A74DBA86849FD7DB9D68EBA9F297D51 /* EasyDAO */;
+			targetProxy = 94F51AFA839FBA5C28259B0D1BD64E06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		261CF7E52C998D02B41359F0B70AF692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D099F7F71D280DDEA0EA853C4C85B5 /* Pods-EasyDAO_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyDAO_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyDAO_Example/Pods-EasyDAO_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyDAO_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BCCD0024029693991631F7DB25CFD1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06221531334068870007CD7A9B8DC223 /* EasyDAO.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyDAO/EasyDAO-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyDAO/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyDAO/EasyDAO.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyDAO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A12957468B867E95407843908DF5777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCB34C663D8826C4FB812184AC9AFE5 /* Pods-EasyDAO_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyDAO_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyDAO_Tests/Pods-EasyDAO_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyDAO_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AAD42CDDE8F9BDD6597E015EF95BD71D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A1EC08809168A6B043BFF4991B1F08 /* Pods-EasyDAO_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyDAO_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyDAO_Tests/Pods-EasyDAO_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyDAO_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C107C16EC3E84F57D20C2F5320B9E7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06221531334068870007CD7A9B8DC223 /* EasyDAO.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyDAO/EasyDAO-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyDAO/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyDAO/EasyDAO.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyDAO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3AC7CDAB0F9B6726371FDEAC13F4C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3488ABCA9685E24112656E24D6AF61B1 /* Pods-EasyDAO_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyDAO_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyDAO_Example/Pods-EasyDAO_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyDAO_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8913081BBD9A35BF043FF8CCC6E86CFB /* Build configuration list for PBXNativeTarget "Pods-EasyDAO_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD42CDDE8F9BDD6597E015EF95BD71D /* Debug */,
+				5A12957468B867E95407843908DF5777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8FA3358E2F8839C8AF3AF25180763E2 /* Build configuration list for PBXNativeTarget "EasyDAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BCCD0024029693991631F7DB25CFD1E /* Debug */,
+				C107C16EC3E84F57D20C2F5320B9E7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47EC48F196A4BF780BAFF6638DEF2E2 /* Build configuration list for PBXNativeTarget "Pods-EasyDAO_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CF7E52C998D02B41359F0B70AF692 /* Debug */,
+				C3AC7CDAB0F9B6726371FDEAC13F4C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
