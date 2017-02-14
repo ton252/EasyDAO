@@ -1,16 +1,25 @@
 PODS:
-  - EasyDAO (0.1.0)
+  - EasyDAO (0.1.0):
+    - RealmSwift
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - RealmSwift (2.4.2):
+    - Realm (= 2.4.2)
 
 DEPENDENCIES:
   - EasyDAO (from `../`)
+  - RealmSwift
 
 EXTERNAL SOURCES:
   EasyDAO:
     :path: ../
 
 SPEC CHECKSUMS:
-  EasyDAO: 70e3915da8fc17a7c712fd25eaae2ce9214aee9d
+  EasyDAO: a9cd9db2d156f3974fd74056c5895b4e5de188fc
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
 
-PODFILE CHECKSUM: 59db18be39addf4e312ff31ef7d330eec8f165ce
+PODFILE CHECKSUM: a4bdbc26199b0e16b9acfacddd69f451a453d467
 
 COCOAPODS: 1.2.0
