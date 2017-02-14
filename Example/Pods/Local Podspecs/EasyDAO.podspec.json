@@ -1,0 +1,22 @@
+{
+  "name": "EasyDAO",
+  "version": "0.1.0",
+  "summary": "A short description of EasyDAO.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ton252/EasyDAO",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ton252": "tonwork252@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ton252/EasyDAO.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EasyDAO/Classes/**/*"
+}

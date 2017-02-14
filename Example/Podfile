@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyDAO_Example' do
+  pod 'EasyDAO', :path => '../'
+
+  target 'EasyDAO_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

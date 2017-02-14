@@ -1,0 +1,6 @@
+framework module EasyDAO {
+  umbrella header "EasyDAO-umbrella.h"
+
+  export *
+  module * { export * }
+}
