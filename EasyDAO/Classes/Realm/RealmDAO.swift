@@ -7,6 +7,7 @@
 //
 
 import RealmSwift
+import Foundation
 
 public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
     
@@ -17,12 +18,7 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
     public var translator: Translator
     public var dataBase = try! Realm()
     
-    public required init(translator: Translator, dataBase: DataBase) {
-        self.translator = translator
-        self.dataBase = dataBase
-    }
-    
-    public init(translator: Translator) {
+    public required init(translator: Translator) {
         self.translator = translator
         self.dataBase = try! Realm()
     }
@@ -70,8 +66,13 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
         return nil
     }
     
-    @discardableResult public func read() -> [Entity] {
-        let result = dataBase.objects(Translator.Entry.self)
+    @discardableResult public func read(predicate: NSPredicate?) -> [Entity] {
+        var result = dataBase.objects(Translator.Entry.self)
+        
+        if let predicate = predicate {
+            result = result.filter(predicate)
+        }
+        
         let entries = Array(result)
         return translator.toEntities(entries)
     }

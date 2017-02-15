@@ -8,19 +8,26 @@
 
 import CoreData
 
-public class CoreDataDAO<Translator: CoreDataTranslator>: DAOProtocol {
+public class CoreDataDAO<Translator: CoreDataTranslatorProtocol>: DAOProtocol {
     
     public typealias Entry = Translator.Entry
     public typealias Entity = Translator.Entity
     public typealias DataBase = NSPersistentContainer
     
     public var translator: Translator
-    public var dataBase: DataBase
+    public var persistentContainer: NSPersistentContainer
     
-    public required init(translator: Translator, dataBase: DataBase) {
-        self.translator = translator
-        self.dataBase = dataBase
+    public required convenience init(translator: Translator, persistentName: String) {
+        self.init(translator: translator)
+        self.persistentContainer = NSPersistentContainer(name: persistentName)
     }
+    
+    public required init(translator: Translator) {
+        self.translator = translator
+        let persistentName = Bundle.main.infoDictionary?["CFBundleName"] as! String
+        self.persistentContainer = NSPersistentContainer(name: persistentName)
+    }
+    
     
     //MARK: Persisting Foreground
     
@@ -100,10 +107,10 @@ public class CoreDataDAO<Translator: CoreDataTranslator>: DAOProtocol {
         return result
     }
     
-    @discardableResult public func read() -> [Entity] {
+    @discardableResult public func read(predicate: NSPredicate?) -> [Entity] {
         let semafore = DispatchSemaphore(value: 0)
         var result: [Entity] = []
-        read { entities -> (Void) in
+        read(predicate: predicate) { entities -> (Void) in
             result = entities
         }
         semafore.wait()
@@ -122,9 +129,9 @@ public class CoreDataDAO<Translator: CoreDataTranslator>: DAOProtocol {
         }
     }
     
-    public func read(completion: @escaping ([Entity])->(Void)) {
+    public func read(predicate: NSPredicate?, completion: @escaping ([Entity])->(Void)) {
         performBackgroundTask { [unowned self] context in
-            let result = self.read(predicate: nil, inContext: context)
+            let result = self.read(predicate: predicate, inContext: context)
             let entities = self.translator.toEntities(result)
             completion(entities)
         }
@@ -212,11 +219,11 @@ public class CoreDataDAO<Translator: CoreDataTranslator>: DAOProtocol {
     //MARK: Helper Methods
     
     lazy var viewContext: NSManagedObjectContext = {
-        return self.dataBase.viewContext
+        return self.persistentContainer.viewContext
     }()
     
     lazy var backgroundContext: NSManagedObjectContext = {
-        return self.dataBase.newBackgroundContext()
+        return self.persistentContainer.newBackgroundContext()
     }()
     
     func performForegroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
@@ -226,6 +233,6 @@ public class CoreDataDAO<Translator: CoreDataTranslator>: DAOProtocol {
     }
     
     func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
-        self.dataBase.performBackgroundTask(block)
+        self.persistentContainer.performBackgroundTask(block)
     }
 }
