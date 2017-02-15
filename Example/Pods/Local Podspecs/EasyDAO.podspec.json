@@ -1,8 +1,8 @@
 {
   "name": "EasyDAO",
   "version": "0.1.0",
-  "summary": "A short description of EasyDAO.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Library implements dao pattern for Realm and Core Data for iOS",
+  "description": "This library allows you to implement the DAO pattern in the application",
   "homepage": "https://github.com/ton252/EasyDAO",
   "license": {
     "type": "MIT",
@@ -16,7 +16,13 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "EasyDAO/Classes/**/*"
+  "source_files": "EasyDAO/Classes/**/*",
+  "frameworks": "CoreData",
+  "dependencies": {
+    "RealmSwift": [
+
+    ]
+  }
 }

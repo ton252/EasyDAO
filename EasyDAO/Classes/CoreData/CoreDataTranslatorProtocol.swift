@@ -8,7 +8,7 @@
 
 import CoreData
 
-public protocol CoreDataTranslator: TranslatorProtocol, NSCopying {
+public protocol CoreDataTranslatorProtocol: TranslatorProtocol, NSCopying {
     associatedtype Entry: NSManagedObject
     var context: NSManagedObjectContext? { get set }
 }

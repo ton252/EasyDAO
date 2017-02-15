@@ -6,17 +6,13 @@
 //  Copyright © 2017 Антон Поляков. All rights reserved.
 //
 
+import Foundation
+
 public protocol DAOProtocol {
     
     associatedtype Entry // Сущность БД
     associatedtype Entity: EntityProtocol // Сущность
     associatedtype Translator: TranslatorProtocol // Сущность
-    associatedtype DataBase
-
-    /**
-    Базы Данных, например CoreData или Realm и т.д.
-     */
-    var dataBase: DataBase { get }
     
     /**
     Транслятор, отвечающий за преобразования сущности БД (Entry)
@@ -30,7 +26,7 @@ public protocol DAOProtocol {
     - parameter DataBase: Объект для работы с БД, Realm или PersistentContainer(CoreData)
     - returns: Инициализированный объект или nil в случае ошибки
      */
-    init(translator: Translator, dataBase: DataBase)
+    init(translator: Translator)
 
     /**
      Сохранение сущности в БД
@@ -57,7 +53,7 @@ public protocol DAOProtocol {
      Чтение всех сущностей из БД
      - returns: массив сущностей - успех, nil - сущности отсутствуют в БД
      */
-    func read() -> [Entity]
+    func read(predicate: NSPredicate?) -> [Entity]
     
     /**
      Удаление сущностей из БД
