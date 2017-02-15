@@ -26,7 +26,7 @@ public protocol DAOProtocol {
     - parameter DataBase: Объект для работы с БД, Realm или PersistentContainer(CoreData)
     - returns: Инициализированный объект или nil в случае ошибки
      */
-    init(translator: Translator)
+    //init(translator: Translator)
 
     /**
      Сохранение сущности в БД

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'EasyDAO/Classes/**/*'
-  s.frameworks = 'CoreData'
+  s.frameworks = 'CoreData', 'Foundation'
   s.dependency 'RealmSwift'
   
   # s.resource_bundles = {
