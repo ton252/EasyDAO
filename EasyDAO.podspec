@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyDAO'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Library implements dao pattern for Realm and Core Data for iOS'
   s.description      = <<-DESC
   This library allows you to implement the DAO pattern in the application
