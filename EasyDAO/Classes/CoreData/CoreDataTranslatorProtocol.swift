@@ -1,5 +1,5 @@
 //
-//  CoreDataTranslator.swift
+//  CoreDataTranslatorProtocol.swift
 //  DAO
 //
 //  Created by Антон Поляков on 14/02/2017.

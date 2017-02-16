@@ -12,22 +12,15 @@ public class CoreDataDAO<Translator: CoreDataTranslatorProtocol>: DAOProtocol {
     
     public typealias Entry = Translator.Entry
     public typealias Entity = Translator.Entity
-    public typealias DataBase = NSPersistentContainer
     
     public var translator: Translator
     public var persistentContainer: NSPersistentContainer
     
-    public required convenience init(translator: Translator, persistentName: String) {
-        self.init(translator: translator)
-        self.persistentContainer = NSPersistentContainer(name: persistentName)
-    }
-    
-    public required init(translator: Translator) {
+    public required init(translator: Translator, container: NSPersistentContainer) {
         self.translator = translator
-        let persistentName = Bundle.main.infoDictionary?["CFBundleName"] as! String
-        self.persistentContainer = NSPersistentContainer(name: persistentName)
+        self.persistentContainer = container
     }
-    
+
     
     //MARK: Persisting Foreground
     
@@ -97,21 +90,23 @@ public class CoreDataDAO<Translator: CoreDataTranslatorProtocol>: DAOProtocol {
     
     //MARK: Reading Foreground
     
-    @discardableResult public func read(id: String) -> Entity? {
+    public func read(id: String) -> Entity? {
         let semafore = DispatchSemaphore(value: 0)
         var result: Entity? = nil
         read(id: id) { entity -> (Void) in
             result = entity
+            semafore.signal()
         }
-        semafore.wait()
+        //semafore.wait()
         return result
     }
     
-    @discardableResult public func read(predicate: NSPredicate?) -> [Entity] {
+    public func read(predicate: NSPredicate?) -> [Entity] {
         let semafore = DispatchSemaphore(value: 0)
         var result: [Entity] = []
         read(predicate: predicate) { entities -> (Void) in
             result = entities
+            semafore.signal()
         }
         semafore.wait()
         return result

@@ -16,11 +16,11 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
     public typealias DataBase = Realm
     
     public var translator: Translator
-    public var dataBase = try! Realm()
+    public var dataBase: Realm
     
-    public required init(translator: Translator) {
+    public required init(translator: Translator, realm: Realm) {
         self.translator = translator
-        self.dataBase = try! Realm()
+        self.dataBase = realm
     }
     
     //MARK: Persisting
