@@ -13,10 +13,9 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
     
     public typealias Entry = Translator.Entry
     public typealias Entity = Translator.Entity
-    public typealias DataBase = Realm
     
-    public var translator: Translator
-    public var dataBase: Realm
+    public let translator: Translator
+    private let dataBase: Realm
     
     public required init(translator: Translator, realm: Realm) {
         self.translator = translator
@@ -59,14 +58,14 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
     
      //MARK: Reading
     
-    @discardableResult public func read(id: String) -> Entity? {
+    public func read(id: String) -> Entity? {
         if let entity = dataBase.object(ofType: Entry.self, forPrimaryKey: id) {
             return translator.toEntity(entity)
         }
         return nil
     }
     
-    @discardableResult public func read(predicate: NSPredicate?) -> [Entity] {
+    public func read(predicate: NSPredicate?) -> [Entity] {
         var result = dataBase.objects(Translator.Entry.self)
         
         if let predicate = predicate {

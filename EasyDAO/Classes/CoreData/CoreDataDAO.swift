@@ -13,8 +13,8 @@ public class CoreDataDAO<Translator: CoreDataTranslatorProtocol>: DAOProtocol {
     public typealias Entry = Translator.Entry
     public typealias Entity = Translator.Entity
     
-    public var translator: Translator
-    public var persistentContainer: NSPersistentContainer
+    public let translator: Translator
+    private let persistentContainer: NSPersistentContainer
     
     public required init(translator: Translator, container: NSPersistentContainer) {
         self.translator = translator

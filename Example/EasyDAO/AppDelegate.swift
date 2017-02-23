@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyDAO
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let database = try! JSONDataBase.shared(name: "new")
+        let obj1 = JSONObject(type: "DOG", primaryId: "Bunny", json: ["master":"Anton"])
+        let obj2 = JSONObject(type: "DOG", primaryId: "Bunny", json: ["master":"Anton"])
+        let obj3 = JSONObject(type: "KAT", primaryId: "Bunny2", json: ["master":"Anton3"])
+        
+        database.persist([obj1,obj2,obj3])
+        let new = database.read(id: "Bunny", type: "DOG")
+        print(new)
+        let pr = NSPredicate(format: "master CONTAINS[c] %@","3")
+        let new2 = database.read(predicate: pr, type: "KAT")
+        print(new2)
+        //database.erase(id: "Bunny", type: "DOG")
+        database.save()
+        //print(database.objects)
+        
         return true
     }
 

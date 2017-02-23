@@ -98,6 +98,10 @@
 		6CFBC007100B01887EF111ACFA8E73E2 /* object_schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C43B4FB2658A0A0DE9D0E8DF3C39D2D /* object_schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.2\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		6E30997431ABC3F8E5375F393AD5336A /* RLMSyncPermissionChange_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = BE117423DB8BA5C9C49A9ADD8344F8C5 /* RLMSyncPermissionChange_Private.h */; };
 		6EB8B386F977AAEEFB6C08E187B8549A /* RLMCollection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB995A3E9D176B951492F1D290C022 /* RLMCollection.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.2\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		71ADCAC41E5E163B006C5B07 /* JSONStorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADCAC21E5E163B006C5B07 /* JSONStorageDAO.swift */; };
+		71ADCAC51E5E163B006C5B07 /* JSONStorageTranslatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADCAC31E5E163B006C5B07 /* JSONStorageTranslatorProtocol.swift */; };
+		71ADCAC71E5E1848006C5B07 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADCAC61E5E1848006C5B07 /* JSONObject.swift */; };
+		71ADCAC91E5E2AF8006C5B07 /* JSONDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADCAC81E5E2AF8006C5B07 /* JSONDataBase.swift */; };
 		71BCE9C51E54D8A20098DA1E /* AnyDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BCE9C41E54D8A20098DA1E /* AnyDAO.swift */; };
 		71BCE9C91E54D8CD0098DA1E /* RealmTranslatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BCE9C81E54D8CD0098DA1E /* RealmTranslatorProtocol.swift */; };
 		726157D1DA0F149BCC4D1639394D35DE /* RLMAuthResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03461C4D2953A231011E8BFF8227355D /* RLMAuthResponseModel.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.4.2\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
@@ -426,6 +430,10 @@
 		6EBB995A3E9D176B951492F1D290C022 /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
 		6FF39AA853E80FABE77739303DA13B71 /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		7177277835C168A6EC8AA8AB961AC8A1 /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
+		71ADCAC21E5E163B006C5B07 /* JSONStorageDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONStorageDAO.swift; sourceTree = "<group>"; };
+		71ADCAC31E5E163B006C5B07 /* JSONStorageTranslatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONStorageTranslatorProtocol.swift; sourceTree = "<group>"; };
+		71ADCAC61E5E1848006C5B07 /* JSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONObject.swift; sourceTree = "<group>"; };
+		71ADCAC81E5E2AF8006C5B07 /* JSONDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataBase.swift; sourceTree = "<group>"; };
 		71BCE9C41E54D8A20098DA1E /* AnyDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDAO.swift; sourceTree = "<group>"; };
 		71BCE9C81E54D8CD0098DA1E /* RealmTranslatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTranslatorProtocol.swift; sourceTree = "<group>"; };
 		71CF8E731E54DEAD0005750B /* CoreDataDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDAO.swift; sourceTree = "<group>"; };
@@ -686,12 +694,24 @@
 		6B18F3B8D9399F7AFBF1B1836199692F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				71ADCAC11E5E163B006C5B07 /* JSONStorage */,
 				71BCE9C41E54D8A20098DA1E /* AnyDAO.swift */,
 				D1C2B8229EEDB69F69F9EA3E2055BF1E /* Base */,
 				71CF8E721E54DEAD0005750B /* CoreData */,
 				17765CBDAB0ACE1612C03D442DBE4F29 /* Realm */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		71ADCAC11E5E163B006C5B07 /* JSONStorage */ = {
+			isa = PBXGroup;
+			children = (
+				71ADCAC21E5E163B006C5B07 /* JSONStorageDAO.swift */,
+				71ADCAC81E5E2AF8006C5B07 /* JSONDataBase.swift */,
+				71ADCAC31E5E163B006C5B07 /* JSONStorageTranslatorProtocol.swift */,
+				71ADCAC61E5E1848006C5B07 /* JSONObject.swift */,
+			);
+			path = JSONStorage;
 			sourceTree = "<group>";
 		};
 		71CF8E721E54DEAD0005750B /* CoreData */ = {
@@ -1175,6 +1195,10 @@
 			files = (
 				71BCE9C91E54D8CD0098DA1E /* RealmTranslatorProtocol.swift in Sources */,
 				984EF35A517177CE51DE953C539A0E05 /* DAOProtocol.swift in Sources */,
+				71ADCAC91E5E2AF8006C5B07 /* JSONDataBase.swift in Sources */,
+				71ADCAC41E5E163B006C5B07 /* JSONStorageDAO.swift in Sources */,
+				71ADCAC51E5E163B006C5B07 /* JSONStorageTranslatorProtocol.swift in Sources */,
+				71ADCAC71E5E1848006C5B07 /* JSONObject.swift in Sources */,
 				71BCE9C51E54D8A20098DA1E /* AnyDAO.swift in Sources */,
 				5AF8FF69F0B999331E25BCB2ADB22E79 /* EasyDAO-dummy.m in Sources */,
 				CE99B340DA63C0D041F1477156BA32AB /* EntityProtocol.swift in Sources */,
