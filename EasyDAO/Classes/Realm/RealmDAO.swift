@@ -52,8 +52,8 @@ public class RealmDAO<Translator: RealmTranslatorProtocol>: DAOProtocol {
         if let oldEntry = oldEntry {
             self.dataBase.delete(oldEntry)
         }
-        let entry = self.translator.toEntry(entity)
-        self.dataBase.add(entry)
+        let entry = translator.toEntry(entity)
+        dataBase.add(entry)
     }
     
      //MARK: Reading
