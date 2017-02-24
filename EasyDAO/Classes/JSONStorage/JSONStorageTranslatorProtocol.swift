@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol JSONStorageTranslatorProtocol: TranslatorProtocol {
-    associatedtype Entry: JSONObject
+    associatedtype Entry: BaseObject
 }

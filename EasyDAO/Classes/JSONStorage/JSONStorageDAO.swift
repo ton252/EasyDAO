@@ -15,78 +15,52 @@ public class JSONStorageDAO<Translator: JSONStorageTranslatorProtocol>: DAOProto
     public typealias Entity = Translator.Entity
     
     public let translator: Translator
-    private var database: Dictionary<String, Any>
+    private var database: JSONDataBase
     
-    public required init(translator: Translator, jsonName: String) {
+    public required init(translator: Translator, jsonDataBase: JSONDataBase) {
         self.translator = translator
-        database = [:]
-        //self.dataBase = realm
+        database = jsonDataBase
     }
     
     //MARK: Persisting
     
     @discardableResult public func persist(_ entity: Entity) -> Bool {
-        //var database =
+        let entry = self.translator.toEntry(entity)
+        database.persist(entry)
         return true
     }
     
     @discardableResult public func persist(_ entities: [Entity]) -> Bool {
+        let entries = self.translator.toEntries(entities)
+        database.persist(entries)
         return true
-    }
-    
-    private func persistWithoutSaving(_ entity: Entity) -> Void {
-        
     }
     
     //MARK: Reading
     
     @discardableResult public func read(id: String) -> Entity? {
+        if let entry = database.object(ofType: Entry.self, forPrimaryKey: id) {
+            return self.translator.toEntity(entry)
+        }
         return nil
     }
     
     @discardableResult public func read(predicate: NSPredicate?) -> [Entity] {
-        return []
+        let entries = database.objects(Entry.self, predicate: predicate)
+        return self.translator.toEntities(entries)
     }
     
     //MARK: Erasing
     
     @discardableResult public func erase(id: String) -> Bool {
+        self.database.erase(ofType: Entry.self, forPrimaryKey: id)
         return true
     }
     
     @discardableResult public func erase() -> Bool {
+        self.database.eraseAll()
         return true
     }
     
-    //MARK: Helpers
-    
-//    private func createDatabase() throws -> Void {
-//        
-//        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-//        
-//        guard let documentsDirectory = paths.first else {
-//            throw JSONStorageDAOError.couldntFindDocumetsPath
-//        }
-//        
-//        do {
-//            try FileManager.default.createDirectory(atPath: documentsDirectory, withIntermediateDirectories: false, attributes: nil)
-//        } catch let error as NSError {
-//            throw JSONStorageDAOError.couldntCreateDataBaseFile
-//        }
-//        
-//    }
-//    
-//    private func synchronized(lock: AnyObject, closure: () -> ()) {
-//        objc_sync_enter(lock)
-//        closure()
-//        objc_sync_exit(lock)
-//    }
-    
-    
 }
-
-//enum JSONStorageDAOError: Error {
-//    case couldntFindDocumetsPath
-//    case couldntCreateDataBaseFile
-//}
 
