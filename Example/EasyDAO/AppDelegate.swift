@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyDAO
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
